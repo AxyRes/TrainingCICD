@@ -16,6 +16,127 @@
     </dependency>
   </dependencies>
   <build>
+    <plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.3</version>
+        <configuration>
+          <source>11</source>
+          <source>11</source>
+          <encoding>UFT-8</encoding>
+          <fork>true</fork>
+          <meminitial>512m</meminitial>
+          <maxmem>2048m</maxmem>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version><!-- IBPTE-1553 JDK11 upgrade -->
+        <configuration>
+          <skipTests>true</skipTests>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-install-plugin</artifactId>
+        <version>2.3.1</version>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.2</version>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-ear-plugin</artifactId>
+        <version>2.7</version>
+      </plugin>
+
+    </plugin>
+    
     <finalName>lam-nhat-tien</finalName>
   </build>
+
+<dependencyManagement>
+    <dependencies>
+      <!-- J2EE -->
+      <dependency>
+        <groupId>javax.transaction</groupId>
+        <artifactId>jta</artifactId>
+        <version>1.1</version>
+        <scope>provided</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>servlet-api</artifactId>
+        <version>2.5</version>
+        <scope>provided</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>javaee</groupId>
+        <artifactId>javaee-api</artifactId>
+        <version>5</version>
+        <scope>provided</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.jms</groupId>
+        <artifactId>jms-api</artifactId>
+        <version>1.1-rev-1</version>
+        <scope>provided</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.mail</groupId>
+        <artifactId>mail</artifactId>
+        <version>1.4</version>
+        <scope>provided</scope>
+      </dependency>
+
+      <!-- 3rd-party -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>1.7.5</version>
+    </dependency>
+    <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.2.10</version><!-- IBPTE-1804 -->
+    </dependency>
+    <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-core</artifactId>
+        <version>1.2.10</version><!-- IBPTE-1804 -->
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>jcl-over-slf4j</artifactId>
+        <version>1.7.5</version>
+    </dependency>
+
+      <dependency>
+        <groupId>org.perf4j</groupId>
+        <artifactId>perf4j</artifactId>
+        <version>0.9.16</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjrt</artifactId>
+        <version>1.8.14</version>
+      </dependency>
+	  
+	  <dependency>
+		<groupId>javassist</groupId>
+		<artifactId>javassist</artifactId>
+		<version>3.12.1.GA</version>
+	  </dependency>
+		
+    </dependencies>
+  </dependencyManagement>
+
 </project>
