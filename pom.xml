@@ -16,7 +16,7 @@
     </dependency>
   </dependencies>
   <build>
-    <plugin>
+    <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.3</version>
@@ -53,7 +53,7 @@
         <version>2.7</version>
       </plugin>
 
-    </plugin>
+    </plugins>
     
     <finalName>lam-nhat-tien</finalName>
   </build>
