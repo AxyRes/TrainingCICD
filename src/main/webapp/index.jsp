@@ -141,7 +141,7 @@ https://templatemo.com/tm-578-first-portfolio
 
                                 <h3 class="pt-2 mb-3">A little bit about DevOps</h3>
 
-                                <p>DevOps is a set of practices, tools, and a cultural philosophy that <a href="https://www.redhat.com/en/topics/automation/what-is-devops-automation" target="_blank">automatoin</a> and integrate the processes between software development and <a href="https://en.wikipedia.org/wiki/System_administrator" target="_blank">system admin</a>. It emphasizes team empowerment, cross-team communication and collaboration, and technology automation.</p>
+                                <p>DevOps is a set of practices, tools, and a cultural philosophy that. <a href="https://www.redhat.com/en/topics/automation/what-is-devops-automation" target="_blank">automatoin</a> and integrate the processes between software development and <a href="https://en.wikipedia.org/wiki/System_administrator" target="_blank">system admin</a>. It emphasizes team empowerment, cross-team communication and collaboration, and technology automation.</p>
                                 <P>To become a DevOps Engineer, you typically need a tertiary qualification in computer science or a related field, as well as industry experience.</P>
                             </div>
                         </div>
