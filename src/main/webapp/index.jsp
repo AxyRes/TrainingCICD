@@ -157,7 +157,7 @@ https://templatemo.com/tm-578-first-portfolio
                         <div class="col-lg-6 col-12">
                             <div class="profile-thumb">
                                 <div class="profile-title">
-                                    <h4 class="mb-0">Information about Tien</h4>
+                                    <h4 class="mb-0">Information Nhat Tien</h4>
                                 </div>
 
                                 <div class="profile-body">
